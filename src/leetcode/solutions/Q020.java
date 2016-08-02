@@ -8,27 +8,26 @@ import java.util.Stack;
  */
 public class Q020 {
     public boolean isValid(String s) {
-        Stack stack = new Stack();
+        Stack<String> stack = new Stack<String>();
         char[] chars = s.toCharArray();
         for(int i = 0; i < chars.length; i++){
             if ("(".equals(String.valueOf(chars[i])) || "{".equals(String.valueOf(chars[i])) || "[".equals(String.valueOf(chars[i]))){
                 stack.push((String.valueOf(chars[i])));
             }else
             if(!stack.empty() && ")".equals(String.valueOf(chars[i]))){
-                String peek = (String) stack.peek();
-                if("(".equals((String) stack.peek())){
+                if("(".equals(stack.peek())){
                     stack.pop();
                 }else {
                     return false;
                 }
             }else if(!stack.empty() && "]".equals(String.valueOf(chars[i]))){
-                if("[".equals((String)stack.peek())){
+                if("[".equals(stack.peek())){
                     stack.pop();
                 }else {
                     return false;
                 }
             }else if(!stack.empty() && "}".equals(String.valueOf(chars[i]))){
-                if("{".equals((String)stack.peek())){
+                if("{".equals(stack.peek())){
                     stack.pop();
                 }else {
                     return false;
