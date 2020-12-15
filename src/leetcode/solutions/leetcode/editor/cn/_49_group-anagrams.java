@@ -1,4 +1,5 @@
-//给定一个字符串数组，将字母异位词组合在一起。字母异位词指字母相同，但排列不同的字符串。 
+package leetcode.solutions.leetcode.editor.cn;
+//给定一个字符串数组，将字母异位词组合在一起。字母异位词指字母相同，但排列不同的字符串。
 //
 // 示例: 
 //
@@ -21,9 +22,9 @@
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public List<List<String>> groupAnagrams(String[] strs) {
-
-    }
+class Solution49 {
+//    public List<List<String>> groupAnagrams(String[] strs) {
+//
+//    }
 }
 //leetcode submit region end(Prohibit modification and deletion)
